@@ -52,10 +52,11 @@ namespace nig{
         : m_data{std::move(other.m_data)}, m_ptr{other.m_ptr}{}
         
         node& operator=(const node& other){
-            if(this == &other){}
+            if(this == &other)
                 return *this;
             m_data = other.m_data;
             m_ptr = other.m_ptr;
+            return *this;
         }
         
         node& operator=(node&& other){

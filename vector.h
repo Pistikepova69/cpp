@@ -310,8 +310,8 @@ namespace nig{
             return reverse_iterator_base<vector<T>, const U>(m_ptr);
         }
 
-        explicit reverse_iterator_base(const iterator_base<vector<T>, U>& it)
-        : m_ptr{it.operator->()}{}
+        /*explicit reverse_iterator_base(const iterator_base<vector<T>, U>& it)
+        : m_ptr{it.(operator->)()}{}*/
     };
 
 
