@@ -167,7 +167,7 @@ namespace nig{
         void clear(){
             node* current = &head;
             node* next = current->m_next;
-            while(current = next){
+            while((current = next)){
                 next = next->m_next;
                 delete current;
             }

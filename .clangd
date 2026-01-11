@@ -1,0 +1,10 @@
+CompileFlags:
+  Add: 
+    - -std=c++26
+    - -Wno-class-conversion
+    - -fmodules
+
+Diagnostics:
+  Suppress:
+    - "fatal_too_many_errors"
+    - class-convestion
